@@ -144,7 +144,7 @@ function addNewBook() {
   const newBook = bookItem(newTitle, newAuthor, newYear, false);
   uncompletedReadBook.append(newBook);
 
-  const convertBook = convertBookData(newTitle, newAuthor, newYear, true);
+  const convertBook = convertBookData(newTitle, newAuthor, newYear, false);
 
   newBook[BOOK_ID] = convertBook.id;
   books.push(convertBook);
